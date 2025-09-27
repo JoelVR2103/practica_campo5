@@ -42,6 +42,20 @@ namespace PracticaCampo5
             Operaciones.CambiarNombre(ref alumno, nuevoNombre);
             Console.WriteLine("Nombre después: " + alumno);
 
+            //hecho por lucinda
+
+            double largo = 10;
+            double ancho = 5;
+            double area = 0;
+            double perimetro = 0;
+
+            // Llamamos a una función que modifica 'area' y 'perimetro' por referencia
+            funcionLucinda.CalcularRectangulo(largo, ancho, ref area, ref perimetro);
+
+            Console.WriteLine($"Largo: {largo}, Ancho: {ancho}");
+            Console.WriteLine($"Área: {area}");
+            Console.WriteLine($"Perímetro: {perimetro}");
+
             // Mostrar pie de página
             Operaciones.MostrarPiePagina();
 
