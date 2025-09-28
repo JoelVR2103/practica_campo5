@@ -56,6 +56,23 @@ namespace PracticaCampo5
             Console.WriteLine($"Área: {area}");
             Console.WriteLine($"Perímetro: {perimetro}");
 
+            // Caso 5: (André) Eliminar DNI por valor
+            Console.WriteLine("\n[CASO 5] Ingresa un DNI para eliminarlo:");
+            string dniActual = Console.ReadLine();
+            string dniEliminado = Operaciones.EliminarDniValor(dniActual);
+            Console.WriteLine("Se eliminó correctamente su DNI.");
+            Console.WriteLine("\nEstado: " + dniEliminado);
+
+            // Caso 6: (André) Generar DNI por referencia
+            Console.WriteLine("\n[CASO 6] Generar un nuevo DNI:");
+            Console.WriteLine("Ingrese su numero de DNI");
+            string dni1 = Console.ReadLine();
+            Console.WriteLine("DNI no reconocido");
+            Console.WriteLine("\nGenerando nuevo DNI....");
+            string nuevoDni = Operaciones.GenerarDniReferencia(ref dni1);
+            Console.WriteLine("\nDNI generado correctamente.");
+            Console.WriteLine("Nuevo DNI: " + dni1);
+
             // Mostrar pie de página
             Operaciones.MostrarPiePagina();
 

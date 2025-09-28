@@ -45,5 +45,19 @@ namespace PracticaCampo5
         {
             nombre = nuevo;
         }
+
+        //(Andre) Método con parámetros por valor
+        public static string EliminarDniValor(string dni)
+        {
+            dni = "DNI eliminado correctamente";
+            return dni;
+        }
+
+        //(Andre) Método con parámetros por referencia
+        public static string GenerarDniReferencia(ref string dni)
+        {
+            dni = "01234567";
+            return dni;
+        }
     }
 }
